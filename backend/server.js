@@ -17,11 +17,16 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use("/uploads", express.static("uploads"));
 
 // ================= Database Connection =================
+// ================= Database Connection =================
 const connection = mysql.createConnection({
-    host: "localhost",
-    user: "root",
-    password: "12345",
-    database: "project"
+    host: process.env.DB_HOST,
+    port: process.env.DB_PORT,
+    user: process.env.DB_USER,
+    password: process.env.DB_PASSWORD,
+    database: process.env.DB_NAME,
+    ssl: {
+        rejectUnauthorized: false
+    }
 });
 
 connection.connect((err) => {
@@ -29,7 +34,8 @@ connection.connect((err) => {
         console.log("Database Connection Error:", err);
         return;
     }
-    console.log("MySQL Connected");
+
+    console.log("MySQL Connected Successfully");
 });
 
 // ================= Test Route =================
