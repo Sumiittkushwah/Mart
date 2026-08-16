@@ -1,0 +1,483 @@
+/* ==========================================================
+   BananaMart - Admin Dashboard Layout & Grid Fix
+========================================================== */
+
+* {
+  box-sizing: border-box;
+}
+
+/* Main Container - Forces Vertical Layout */
+.admin-page {
+  width: 100% !important;
+  max-width: 100% !important;
+  display: flex !important;
+  flex-direction: column !important; /* Fixes side-by-side stretching */
+  gap: 24px !important;
+  padding: 25px;
+  box-sizing: border-box !important;
+  overflow-x: hidden;
+  animation: fadeIn 0.4s ease-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ==========================================
+   1. Top Header Section
+========================================== */
+.dashboard-top {
+  width: 100% !important;
+  background: #ffffff;
+  padding: 24px;
+  border-radius: 18px;
+  display: flex !important;
+  flex-direction: row !important;
+  justify-content: space-between !important;
+  align-items: center !important;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+  border: 1px solid #e2e8f0;
+}
+
+.dashboard-top h1 {
+  color: #166534;
+  font-size: 28px;
+  margin: 0;
+  font-weight: 800;
+}
+
+.dashboard-top p {
+  color: #64748b;
+  margin: 6px 0 0 0;
+  font-size: 14px;
+}
+
+.status {
+  display: inline-block;
+  margin-top: 12px;
+  background: #dcfce7;
+  color: #15803d;
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.admin-profile {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: #f0fdf4;
+  padding: 12px 18px;
+  border-radius: 14px;
+  border: 1px solid #bbf7d0;
+}
+
+.admin-logo {
+  width: 50px;
+  height: 50px;
+  background: #22c55e;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 26px;
+}
+
+.admin-profile h3 {
+  margin: 0;
+  font-size: 16px;
+  color: #14532d;
+}
+
+.admin-profile span {
+  font-size: 12px;
+  color: #64748b;
+}
+
+/* ==========================================
+   2. Stat Cards Grid
+========================================== */
+.cards {
+  width: 100% !important;
+  display: grid !important;
+  grid-template-columns: repeat(4, 1fr) !important;
+  gap: 20px;
+}
+
+.card {
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+  border: 1px solid #e2e8f0;
+  transition: transform 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+}
+
+.card-icon {
+  width: 55px;
+  height: 55px;
+  border-radius: 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 26px;
+  flex-shrink: 0;
+}
+
+.card h3 {
+  margin: 0;
+  font-size: 14px;
+  color: #64748b;
+  font-weight: 500;
+}
+
+.card p {
+  margin: 4px 0 2px 0;
+  font-size: 28px;
+  font-weight: 800;
+  line-height: 1;
+}
+
+.card span {
+  font-size: 12px;
+  color: #94a3b8;
+}
+
+/* Card Accents */
+.total { border-left: 5px solid #3b82f6; }
+.total .card-icon { background: #dbeafe; }
+.total p { color: #2563eb; }
+
+.request { border-left: 5px solid #f59e0b; }
+.request .card-icon { background: #fef3c7; }
+.request p { color: #d97706; }
+
+.approved { border-left: 5px solid #22c55e; }
+.approved .card-icon { background: #dcfce7; }
+.approved p { color: #16a34a; }
+
+.rejected { border-left: 5px solid #ef4444; }
+.rejected .card-icon { background: #fee2e2; }
+.rejected p { color: #dc2626; }
+
+/* ==========================================
+   3. Analytics, Quick Actions, Welcome Boxes
+========================================== */
+.analytics-box,
+.quick-box,
+.welcome-box {
+  width: 100% !important;
+  background: #ffffff;
+  padding: 24px;
+  border-radius: 18px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+  border: 1px solid #e2e8f0;
+}
+
+.analytics-box h2,
+.quick-box h2,
+.welcome-box h2 {
+  color: #166534;
+  margin: 0 0 16px 0;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.progress-text {
+  display: flex;
+  justify-content: space-between;
+  font-weight: 600;
+  color: #334155;
+  font-size: 14px;
+}
+
+.progress {
+  height: 12px;
+  background: #e2e8f0;
+  border-radius: 20px;
+  overflow: hidden;
+  margin-top: 10px;
+}
+
+.progress div {
+  height: 100%;
+  background: #22c55e;
+  border-radius: 20px;
+  transition: width 0.4s ease;
+}
+
+/* Quick Action Buttons Grid */
+.quick-grid {
+  width: 100% !important;
+  display: grid !important;
+  grid-template-columns: repeat(3, 1fr) !important;
+  gap: 16px;
+}
+
+.quick-grid a {
+  background: #16a34a;
+  color: #ffffff;
+  padding: 16px;
+  border-radius: 12px;
+  text-align: center;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  transition: all 0.2s ease;
+}
+
+.quick-grid a:hover {
+  background: #15803d;
+  transform: translateY(-2px);
+}
+
+/* ==========================================
+   Responsive Adaptations
+========================================== */
+@media (max-width: 1100px) {
+  .cards {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .dashboard-top {
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    gap: 16px;
+  }
+
+  .cards,
+  .quick-grid {
+    grid-template-columns: 1fr !important;
+  }
+}
+/* ==========================================
+   Responsive Dashboard CSS
+========================================== */
+
+/* Large Tablet */
+@media (max-width: 1200px) {
+
+  .admin-page {
+    padding: 20px;
+  }
+
+  .cards {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+
+  .quick-grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+}
+
+/* Tablet */
+@media (max-width: 992px) {
+
+  .dashboard-top {
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    gap: 20px;
+  }
+
+  .admin-profile {
+    width: 100%;
+    justify-content: flex-start;
+  }
+
+  .dashboard-top h1 {
+    font-size: 24px;
+  }
+
+  .cards {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+
+  .quick-grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+
+  .admin-page {
+    padding: 15px;
+    gap: 18px;
+  }
+
+  .dashboard-top,
+  .analytics-box,
+  .quick-box,
+  .welcome-box {
+    padding: 18px;
+  }
+
+  .dashboard-top h1 {
+    font-size: 22px;
+  }
+
+  .dashboard-top p {
+    font-size: 13px;
+  }
+
+  .cards {
+    grid-template-columns: 1fr !important;
+    gap: 15px;
+  }
+
+  .card {
+    padding: 18px;
+  }
+
+  .card p {
+    font-size: 24px;
+  }
+
+  .card-icon {
+    width: 50px;
+    height: 50px;
+    font-size: 22px;
+  }
+
+  .quick-grid {
+    grid-template-columns: 1fr !important;
+    gap: 12px;
+  }
+
+  .quick-grid a {
+    padding: 14px;
+    font-size: 14px;
+  }
+
+  .admin-profile {
+    width: 100%;
+    padding: 12px;
+  }
+}
+
+/* Small Mobile */
+@media (max-width: 576px) {
+
+  .admin-page {
+    padding: 12px;
+  }
+
+  .dashboard-top {
+    padding: 16px;
+  }
+
+  .dashboard-top h1 {
+    font-size: 20px;
+  }
+
+  .status {
+    font-size: 12px;
+    padding: 5px 10px;
+  }
+
+  .admin-logo {
+    width: 42px;
+    height: 42px;
+    font-size: 20px;
+  }
+
+  .admin-profile h3 {
+    font-size: 15px;
+  }
+
+  .admin-profile span {
+    font-size: 11px;
+  }
+
+  .card {
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+    gap: 12px;
+  }
+
+  .card p {
+    font-size: 22px;
+  }
+
+  .analytics-box,
+  .quick-box,
+  .welcome-box {
+    padding: 16px;
+  }
+
+  .analytics-box h2,
+  .quick-box h2,
+  .welcome-box h2 {
+    font-size: 17px;
+  }
+
+  .progress-text {
+    font-size: 13px;
+  }
+
+  .quick-grid a {
+    font-size: 13px;
+    padding: 12px;
+  }
+}
+
+/* Extra Small Devices */
+@media (max-width: 400px) {
+
+  .admin-page {
+    padding: 10px;
+  }
+
+  .dashboard-top h1 {
+    font-size: 18px;
+  }
+
+  .dashboard-top p {
+    font-size: 12px;
+  }
+
+  .card {
+    padding: 14px;
+  }
+
+  .card p {
+    font-size: 20px;
+  }
+
+  .card h3 {
+    font-size: 13px;
+  }
+
+  .quick-grid a {
+    padding: 10px;
+    font-size: 12px;
+  }
+
+  .analytics-box,
+  .quick-box,
+  .welcome-box {
+    padding: 14px;
+  }
+}

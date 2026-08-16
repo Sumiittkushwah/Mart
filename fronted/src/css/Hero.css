@@ -1,0 +1,110 @@
+.hero{
+    width:100%;
+    min-height:90vh;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:70px 8%;
+    background:#fffbea;
+}
+
+.hero-left{
+    flex:1;
+}
+
+.tag{
+    background:#fff3cd;
+    color:#d97706;
+    padding:8px 18px;
+    border-radius:30px;
+    font-size:14px;
+    font-weight:600;
+}
+
+.hero-left h1{
+    font-size:58px;
+    margin:20px 0;
+    color:#222;
+    line-height:1.2;
+}
+
+.hero-left h1 span{
+    color:#f4b400;
+}
+
+.hero-left p{
+    color:#555;
+    font-size:18px;
+    line-height:30px;
+    max-width:550px;
+    margin-bottom:35px;
+}
+
+.hero-btns{
+    display:flex;
+    gap:20px;
+}
+
+.sell-btn,
+.buy-btn{
+    padding:14px 32px;
+    border:none;
+    border-radius:50px;
+    cursor:pointer;
+    font-size:16px;
+    font-weight:600;
+    transition:.3s;
+}
+
+.sell-btn{
+    background:#f4b400;
+    color:#fff;
+}
+
+.sell-btn:hover{
+    background:#d89f00;
+}
+
+.buy-btn{
+    background:#fff;
+    border:2px solid #f4b400;
+    color:#f4b400;
+}
+
+.buy-btn:hover{
+    background:#f4b400;
+    color:#fff;
+}
+
+.hero-right{
+    flex:1;
+    display:flex;
+    justify-content:center;
+}
+
+.hero-right img{
+    width:500px;
+    max-width:100%;
+}
+
+@media(max-width:900px){
+
+.hero{
+    flex-direction:column-reverse;
+    text-align:center;
+    gap:40px;
+}
+
+.hero-left h1{
+    font-size:42px;
+}
+
+.hero-left p{
+    margin:auto;
+    margin-bottom:30px;
+}
+
+.hero-btns{
+    justify-content:center;
+}
+}

@@ -1,0 +1,259 @@
+/* ==========================================================
+   BananaMart - Improved Admin Requests CSS
+========================================================== */
+
+.admin-request-container {
+    width: 100%;
+    padding: 25px;
+    background: #f8fafc;
+    box-sizing: border-box;
+    animation: fadeIn .4s ease-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Header */
+.request-header {
+    margin-bottom: 25px;
+}
+
+.request-header h1 {
+    font-size: 28px;
+    color: #14532d;
+    font-weight: 700;
+    margin: 0;
+}
+
+.request-header p {
+    color: #64748b;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+/* Responsive Table Wrapper */
+.table-responsive {
+    width: 100%;
+    background: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+    overflow-x: auto;
+    border: 1px solid #e2e8f0;
+}
+
+/* Table */
+.admin-request-container table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 1000px; /* Prevents cell squishing */
+    text-align: left;
+}
+
+/* Table Header */
+.admin-request-container thead {
+    background: #f1f5f9;
+    border-bottom: 2px solid #e2e8f0;
+}
+
+.admin-request-container th {
+    padding: 16px;
+    font-size: 13px;
+    font-weight: 700;
+    color: #334155;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    white-space: nowrap;
+}
+
+/* Table Body */
+.admin-request-container td {
+    padding: 16px;
+    border-bottom: 1px solid #f1f5f9;
+    color: #334155;
+    font-size: 14px;
+    vertical-align: middle;
+}
+
+.admin-request-container tbody tr {
+    transition: background-color 0.2s ease;
+}
+
+.admin-request-container tbody tr:hover {
+    background: #f0fdf4;
+}
+
+.admin-request-container tbody tr:last-child td {
+    border-bottom: none;
+}
+
+/* Column Helpers */
+.font-bold {
+    font-weight: 700;
+    color: #166534;
+}
+
+.client-info strong {
+    display: block;
+    color: #0f172a;
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    font-size: 13px;
+    color: #64748b;
+}
+
+.item-details {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.qty-badge {
+    display: inline-block;
+    background: #e2e8f0;
+    color: #334155;
+    font-size: 11px;
+    font-weight: 600;
+    padding: 2px 8px;
+    border-radius: 12px;
+    width: fit-content;
+}
+
+.price-tag {
+    font-weight: 700;
+    color: #16a34a;
+    font-size: 15px;
+}
+
+/* Image */
+.admin-request-container img {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 1px solid #cbd5e1;
+}
+
+/* Status Badges */
+.status {
+    display: inline-block;
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: capitalize;
+    text-align: center;
+}
+
+.status.pending {
+    background: #fef3c7;
+    color: #d97706;
+}
+
+.status.approved {
+    background: #dcfce7;
+    color: #15803d;
+}
+
+.status.rejected {
+    background: #fee2e2;
+    color: #dc2626;
+}
+
+/* Date Display */
+.date-cell {
+    font-size: 13px;
+    color: #475569;
+}
+
+.date-cell small {
+    display: block;
+    color: #94a3b8;
+    font-size: 11px;
+}
+
+/* Action Buttons Grid */
+.action-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    min-width: 100px;
+}
+
+.approve-btn,
+.reject-btn,
+.delete-btn {
+    width: 100%;
+    padding: 7px 10px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+    transition: all 0.2s ease;
+}
+
+.approve-btn {
+    background: #dcfce7;
+    color: #15803d;
+}
+
+.approve-btn:hover {
+    background: #22c55e;
+    color: white;
+}
+
+.reject-btn {
+    background: #ffedd5;
+    color: #c2410c;
+}
+
+.reject-btn:hover {
+    background: #ea580c;
+    color: white;
+}
+
+.delete-btn {
+    background: #fee2e2;
+    color: #dc2626;
+}
+
+.delete-btn:hover {
+    background: #ef4444;
+    color: white;
+}
+
+/* Empty State */
+.empty-state {
+    padding: 40px !important;
+    text-align: center;
+    font-size: 16px;
+    color: #94a3b8;
+    font-weight: 500;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .admin-request-container {
+        padding: 15px;
+    }
+
+    .request-header h1 {
+        font-size: 22px;
+    }
+}

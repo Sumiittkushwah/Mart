@@ -1,0 +1,339 @@
+{
+  "home":"Home",
+  "bananas":"Bananas",
+  "about":"About",
+  "contact":"Contact",
+  "login":"Login",
+  "admin":"Admin",
+
+  "hero": {
+    "tag": "Fresh Banana Marketplace",
+    "title": "Sell Your Bananas",
+    "highlight": "Directly to Buyers",
+    "description": "Join our platform to sell fresh bananas. Register your account, upload your banana stock, and receive purchase requests from buyers.",
+    "start": "Get Started",
+    "login": "Login"
+  },
+
+
+  "back_home": "Back to Home",
+
+  "welcome_back": "Welcome Back",
+
+  "login_description": "Login to manage your banana requests, orders, and business efficiently.",
+
+  "secure_login": "Secure Login",
+  "fresh_marketplace": "Fresh Banana Marketplace",
+  "order_management": "Easy Order Management",
+  "delivery_support": "Fast Delivery Support",
+
+  "client_login": "Client Login",
+
+  "dashboard_access": "Access your dashboard securely.",
+
+  "email_placeholder": "Enter your email",
+
+  "password": "Password",
+
+  "password_placeholder": "Enter your password",
+
+  "show": "Show",
+  "hide": "Hide",
+
+  "remember_me": "Remember Me",
+
+  "forgot_password": "Forgot Password?",
+
+  "no_account": "Don't have an account?",
+
+  "create_account": "Create Account",
+
+  "server_error": "Server Error",
+
+   "welcome":"Welcome",
+  "dashboard_description":"Manage your banana requests and track their status from your dashboard.",
+
+  "total_requests":"Total Requests",
+  "pending":"Pending",
+  "approved":"Approved",
+  "rejected":"Rejected",
+
+  "banana_portal":"Banana Request Portal",
+
+  "portal_description":"Welcome to BananaMart. From this dashboard you can:",
+
+  "send_requests":"Send new banana requests",
+  "track_status":"Track request status",
+  "manage_profile":"Manage your profile",
+  "view_requests":"View all submitted requests",
+
+  "send_banana_request":"Send Banana Request",
+"request_description":"Fill the form below to send your request to the admin.",
+
+"banana_type":"Banana Type",
+"select_banana":"Select Banana Type",
+
+"quantity":"Quantity (KG)",
+"enter_quantity":"Enter Quantity",
+
+"expected_price":"Expected Price (Per KG)",
+"enter_price":"Enter Price",
+
+"location":"Location",
+"enter_location":"Enter Location",
+
+"upload_image":"Upload Banana Image",
+
+"description":"Description",
+"write_description":"Write Description...",
+
+"send_request":"Send Request",
+
+"my_banana_requests": "My Banana Requests",
+"view_submitted_requests": "View all the requests you have submitted.",
+
+"quantity": "Quantity",
+"price": "Price",
+"location": "Location",
+"description": "Description",
+"date": "Date",
+
+"no_requests": "No Requests Found",
+"no_request_message": "You haven't submitted any banana requests yet.",
+
+"unable_load_requests": "Unable to load requests",
+
+"my_profile":"My Profile",
+"profile_description":"View and update your personal information.",
+
+"client_id":"Client ID",
+"full_name":"Full Name",
+"phone_number":"Phone Number",
+"registration_date":"Registration Date",
+
+"edit_profile":"Edit Profile",
+"save_changes":"Save Changes",
+
+"unable_load_profile":"Unable to load profile",
+"update_failed":"Update Failed",
+
+"admin_control_center":"Admin Control Center",
+"admin_description":"Manage clients, approve banana requests, monitor sales and control your marketplace.",
+
+"manage_clients":"Manage Clients",
+"handle_requests":"Handle Requests",
+"view_reports":"View Reports",
+
+"admin_login":"Admin Login",
+"secure_admin_access":"Secure Admin Access",
+
+"enter_admin_email":"Enter admin email",
+"enter_password":"Enter password",
+
+"authenticating":"Authenticating...",
+"login_dashboard":"Login Dashboard",
+
+"unable_load_dashboard":"Unable to load dashboard data",
+"loading_admin_dashboard":"Loading Admin Dashboard...",
+
+"good_morning_admin":"Good Morning Admin",
+"welcome_admin":"Welcome back to BananaMart Control Center.",
+
+"marketplace_active":"Marketplace Active",
+
+"administrator":"Administrator",
+"banana_owner":"BananaMart Owner",
+
+"total_clients":"Total Clients",
+"registered_sellers":"Registered Sellers",
+
+"total_requests":"Total Requests",
+"banana_orders":"Banana Orders",
+
+"approved":"Approved",
+"completed_deals":"Completed Deals",
+
+"rejected":"Rejected",
+"cancelled":"Cancelled",
+
+"request_analytics":"Request Analytics",
+"approval_rate":"Approval Rate",
+
+"quick_actions":"Quick Actions",
+
+"manage_requests":"Manage Requests",
+"manage_clients":"Manage Clients",
+"view_reports":"View Reports",
+
+"banana_admin_panel":"BananaMart Admin Panel",
+"admin_panel_description":"Control your complete banana marketplace, manage sellers, approve requests and track business growth.",
+
+"registered_clients":"Registered Clients",
+"search_client":"Search Client...",
+"total_clients":"Total Clients",
+
+"id":"ID",
+"name":"Name",
+"email":"Email",
+"phone":"Phone",
+"address":"Address",
+"register_date":"Register Date",
+"action":"Action",
+
+"delete":"Delete",
+
+"delete_client_confirm":"Are you sure you want to delete this client?",
+
+"unable_fetch_clients":"Unable to fetch clients",
+"delete_failed":"Delete Failed",
+
+"no_clients_found":"No Clients Found",
+"client_requests":"Client Requests",
+"manage_marketplace_orders":"Manage and track all banana marketplace orders",
+
+"client":"Client",
+"contact_info":"Contact Info",
+"item_details":"Item Details",
+"image":"Image",
+"status":"Status",
+"date":"Date",
+"action":"Action",
+
+"pending":"Pending",
+"approve":"Approve",
+"reject":"Reject",
+"delete":"Delete",
+
+"status_update_failed":"Status Update Failed",
+"delete_request_confirm":"Are you sure you want to delete this request?",
+"delete_failed":"Delete Failed",
+
+"no_requests_found":"No Requests Found",
+
+"admin_reports":"Admin Reports",
+
+"summary":"Summary",
+
+"approved_requests":"Approved Requests",
+"rejected_requests":"Rejected Requests",
+"pending_requests":"Pending Requests",
+
+"unable_load_reports":"Unable to load reports",
+"about_title":"About BananaMart",
+
+"about_para1":"BananaMart is a trusted banana purchasing platform that connects local banana growers and clients with our company. We purchase fresh, high-quality bananas directly from registered clients at fair prices.",
+
+"about_para2":"After purchasing the bananas, they are carefully inspected, cleaned, and processed in our production unit. We use modern manufacturing techniques to produce premium-quality banana chips that are hygienically packed and supplied to markets across different regions.",
+
+"about_para3":"Our mission is to support local farmers and clients by providing them with a reliable marketplace while delivering fresh and delicious banana chips to customers.",
+
+
+"fresh_bananas":"Fresh Bananas",
+"fresh_bananas_desc":"We purchase fresh bananas directly from registered clients.",
+
+"manufacturing":"Manufacturing",
+"manufacturing_desc":"Bananas are processed in our factory to produce high-quality banana chips.",
+
+"quality_packing":"Quality Packing",
+"quality_packing_desc":"Our banana chips are hygienically packed before distribution.",
+
+"fair_pricing":"Fair Pricing",
+"fair_pricing_desc":"We ensure transparent pricing and timely payments to our clients.",
+
+"contact_title":"Contact Us",
+
+"contact_text":"We'd love to hear from you! If you have any questions, suggestions, or want to sell your bananas to BananaMart, feel free to contact us.",
+
+"contact_information":"Contact Information",
+
+"office_address":"Office Address",
+
+"working_hours":"Working Hours",
+
+"working_time":"Monday - Saturday\n9:00 AM - 6:00 PM",
+
+"send_message":"Send Message",
+
+"your_name":"Your Name",
+
+"your_email":"Your Email",
+
+"subject":"Subject",
+
+"write_message":"Write your message...",
+"dashboard": "Dashboard",
+"send_request": "Send Request",
+"my_requests": "My Requests",
+"profile": "Profile",
+"logout": "Logout",
+"clients": "Clients",
+"requests": "Requests",
+"reports": "Reports",
+"buy": {
+  "title": "🍌 We Buy Bananas in Bulk",
+  "subtitle": "BananaMart purchases fresh bananas directly from farmers, fruit vendors, wholesalers and local sellers. Sell your unsold bananas at a fair price.",
+  "sell_now": "Sell Your Bananas",
+
+  "why": "Why Do We Buy Bananas?",
+  "why_desc1": "Many fruit vendors and wholesalers are left with unsold bananas. Instead of wasting them, they can sell them to BananaMart.",
+  "why_desc2": "We inspect these bananas and use them to manufacture high-quality banana products.",
+
+  "products": "Products We Manufacture",
+
+  "chips": "Banana Chips",
+  "chips_desc": "Crispy and delicious banana chips.",
+
+  "powder": "Banana Powder",
+  "powder_desc": "Used in baby food and bakery products.",
+
+  "shake": "Banana Shake Mix",
+  "shake_desc": "Healthy instant shake mix.",
+
+  "cookies": "Banana Cookies",
+  "cookies_desc": "Nutritious banana cookies.",
+
+  "cake": "Banana Cake Mix",
+  "cake_desc": "Premium banana baking ingredients.",
+
+  "feed": "Animal Feed",
+  "feed_desc": "Overripe bananas are converted into animal feed.",
+
+  "accepted": "Bananas We Accept",
+
+  "bulk": "Bulk Purchase Details",
+
+  "how": "How It Works",
+
+  "step1": "Register",
+  "step1_desc": "Create your BananaMart account.",
+
+  "step2": "Send Request",
+  "step2_desc": "Upload banana details.",
+
+  "step3": "Verification",
+  "step3_desc": "Our team verifies your request.",
+
+  "step4": "Get Paid",
+  "step4_desc": "Receive payment after approval.",
+
+  "benefits": "Benefits for Sellers",
+
+  "loss": "Reduce Loss",
+  "loss_desc": "Sell unsold bananas instead of wasting them.",
+
+  "payment": "Instant Payment",
+  "payment_desc": "Fast and secure payment.",
+
+  "pickup": "Pickup Service",
+  "pickup_desc": "Pickup available for bulk orders.",
+
+  "partner": "Long-Term Partnership",
+  "partner_desc": "Become our trusted supplier.",
+
+  "ready": "Ready to Sell Your Bananas?",
+  "ready_desc": "Join BananaMart today and earn better profits.",
+  "register": "Register Now"
+}
+  
+  
+}

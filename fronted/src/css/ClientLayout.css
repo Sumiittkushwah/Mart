@@ -1,0 +1,351 @@
+/* ==========================================================
+   BananaMart - Client Layout CSS
+========================================================== */
+
+
+/* Main Layout */
+
+.dashboard{
+
+    display:flex;
+
+    min-height:100vh;
+
+    background:#f5f7f5;
+
+}
+
+
+
+/* =========================
+   Sidebar
+========================= */
+
+.sidebar{
+
+    width:260px;
+
+    height:100vh;
+
+    background:linear-gradient(
+        180deg,
+        #1b5e20,
+        #2e7d32
+    );
+
+    color:white;
+
+    position:fixed;
+
+    left:0;
+
+    top:0;
+
+    padding:25px 15px;
+
+    transition:.4s;
+
+}
+
+
+
+/* Logo */
+
+.sidebar h2{
+
+    text-align:center;
+
+    font-size:26px;
+
+    margin-bottom:35px;
+
+    letter-spacing:.5px;
+
+}
+
+
+
+/* Menu */
+
+.sidebar ul{
+
+    list-style:none;
+
+    padding:0;
+
+}
+
+
+.sidebar ul li{
+
+    margin-bottom:12px;
+
+    border-radius:12px;
+
+    overflow:hidden;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+
+
+/* Link */
+
+.sidebar ul li a{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:12px;
+
+    padding:14px 18px;
+
+    color:white;
+
+    text-decoration:none;
+
+    font-size:16px;
+
+    transition:.3s;
+
+}
+
+
+
+/* Hover */
+
+.sidebar ul li:hover{
+
+    transform:translateX(8px);
+
+}
+
+
+
+.sidebar ul li:hover a{
+
+    background:rgba(255,255,255,.18);
+
+}
+
+
+
+/* =========================
+   Active Menu
+========================= */
+
+
+.sidebar ul li.active{
+
+    background:white;
+
+}
+
+
+
+.sidebar ul li.active a{
+
+    color:#1b5e20;
+
+    font-weight:600;
+
+}
+
+
+
+/* =========================
+   Logout
+========================= */
+
+
+.sidebar ul li:last-child{
+
+    margin-top:30px;
+
+    padding:14px 18px;
+
+    font-size:16px;
+
+    transition:.3s;
+
+}
+
+
+
+.sidebar ul li:last-child:hover{
+
+    background:#d32f2f;
+
+    transform:translateX(8px);
+
+    box-shadow:
+    0 8px 20px rgba(211,47,47,.4);
+
+}
+
+
+
+/* Click Animation */
+
+.sidebar ul li:active{
+
+    transform:scale(.95);
+
+}
+
+
+
+/* =========================
+   Main Content
+========================= */
+
+
+.main-content{
+
+    margin-left:260px;
+
+    width:calc(100% - 260px);
+
+    padding:35px;
+
+    min-height:100vh;
+
+}
+
+
+
+/* =========================
+   Page Animation
+========================= */
+
+.main-content{
+
+    animation:pageOpen .4s ease;
+
+}
+
+
+
+@keyframes pageOpen{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(20px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+
+
+/* =========================
+   Mobile Responsive
+========================= */
+
+
+@media(max-width:900px){
+
+
+.sidebar{
+
+    width:220px;
+
+}
+
+
+.main-content{
+
+    margin-left:220px;
+
+    width:calc(100% - 220px);
+
+}
+
+
+}
+
+
+
+@media(max-width:700px){
+
+
+.dashboard{
+
+    display:block;
+
+}
+
+
+.sidebar{
+
+    position:relative;
+
+    width:100%;
+
+    height:auto;
+
+}
+
+
+.main-content{
+
+    margin-left:0;
+
+    width:100%;
+
+    padding:20px;
+
+}
+
+
+.sidebar ul li a{
+
+    justify-content:center;
+
+}
+
+
+}
+
+
+
+/* =========================
+   Scrollbar
+========================= */
+
+
+::-webkit-scrollbar{
+
+    width:8px;
+
+}
+
+
+::-webkit-scrollbar-thumb{
+
+    background:#2e7d32;
+
+    border-radius:20px;
+
+}
+
+
+::-webkit-scrollbar-track{
+
+    background:#eee;
+
+}

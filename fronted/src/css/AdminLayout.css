@@ -1,0 +1,216 @@
+.admin-layout{
+
+display:flex;
+
+min-height:100vh;
+
+background:#f5f7fa;
+
+}
+
+
+
+.admin-sidebar{
+
+width:270px;
+
+height:100vh;
+
+position:fixed;
+
+left:0;
+
+top:0;
+
+background:linear-gradient(
+180deg,
+#14532d,
+#22c55e
+);
+
+padding:30px 20px;
+
+color:white;
+
+}
+
+
+
+.admin-content{
+
+margin-left:270px;
+
+width:calc(100% - 270px);
+
+padding:30px;
+
+}
+
+
+
+.admin-sidebar ul{
+
+list-style:none;
+
+padding:0;
+
+}
+
+
+
+.admin-sidebar li{
+
+padding:15px;
+
+margin-bottom:12px;
+
+border-radius:15px;
+
+cursor:pointer;
+
+transition:.3s;
+
+}
+
+
+
+.admin-sidebar li a{
+
+color:white;
+
+text-decoration:none;
+
+display:block;
+
+}
+
+
+
+.admin-sidebar li:hover{
+
+background:rgba(255,255,255,.2);
+
+transform:translateX(8px);
+
+}
+
+
+
+.admin-sidebar .active{
+
+background:white;
+
+}
+
+
+
+.admin-sidebar .active a{
+
+color:#166534;
+
+}
+/* ==========================================
+   Responsive Sidebar
+========================================== */
+
+/* Laptop */
+@media (max-width: 992px) {
+
+    .admin-sidebar {
+        width: 220px;
+        padding: 25px 15px;
+    }
+
+    .admin-content {
+        margin-left: 220px;
+        width: calc(100% - 220px);
+        padding: 20px;
+    }
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+
+    .admin-layout {
+        flex-direction: column;
+    }
+
+    .admin-sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+        padding: 15px;
+    }
+
+    .admin-sidebar ul {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        justify-content: center;
+    }
+
+    .admin-sidebar li {
+        flex: 1 1 45%;
+        margin-bottom: 0;
+        text-align: center;
+        padding: 12px;
+    }
+
+    .admin-sidebar li:hover {
+        transform: none;
+    }
+
+    .admin-content {
+        margin-left: 0;
+        width: 100%;
+        padding: 15px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 576px) {
+
+    .admin-sidebar {
+        padding: 12px;
+    }
+
+    .admin-sidebar ul {
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .admin-sidebar li {
+        width: 100%;
+        padding: 12px;
+        border-radius: 10px;
+        text-align: left;
+    }
+
+    .admin-sidebar li a {
+        font-size: 14px;
+    }
+
+    .admin-content {
+        padding: 12px;
+    }
+}
+
+/* Extra Small Devices */
+@media (max-width: 400px) {
+
+    .admin-sidebar {
+        padding: 10px;
+    }
+
+    .admin-sidebar li {
+        padding: 10px;
+    }
+
+    .admin-sidebar li a {
+        font-size: 13px;
+    }
+
+    .admin-content {
+        padding: 10px;
+    }
+}

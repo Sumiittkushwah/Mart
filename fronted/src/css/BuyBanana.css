@@ -1,0 +1,312 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+.buy-container{
+    width:100%;
+    background:#f8faf8;
+}
+
+/* ================= Hero ================= */
+
+.buy-hero{
+    background:linear-gradient(135deg,#fff8e6,#fff,#f8fff3);
+    text-align:center;
+    padding:90px 20px;
+}
+
+.buy-hero h1{
+    font-size:48px;
+    color:#222;
+    margin-bottom:20px;
+}
+
+.buy-hero p{
+    max-width:850px;
+    margin:auto;
+    color:#555;
+    line-height:1.8;
+    font-size:18px;
+}
+
+.sell-now-btn{
+    margin-top:35px;
+    padding:15px 40px;
+    border:none;
+    border-radius:40px;
+    background:#f4b400;
+    color:#fff;
+    font-size:17px;
+    cursor:pointer;
+    transition:.3s;
+    font-weight:600;
+}
+
+.sell-now-btn:hover{
+    background:#d89b00;
+    transform:translateY(-4px);
+    box-shadow:0 10px 25px rgba(244,180,0,.4);
+}
+
+/* ================= Sections ================= */
+
+.why-section,
+.accepted-section,
+.product-section,
+.purchase-section,
+.benefit-section,
+.cta-section{
+    width:90%;
+    max-width:1200px;
+    margin:70px auto;
+}
+
+.why-section h2,
+.accepted-section h2,
+.product-section h2,
+.purchase-section h2,
+.benefit-section h2,
+.cta-section h2{
+    text-align:center;
+    font-size:34px;
+    margin-bottom:25px;
+    color:#222;
+}
+
+.why-section p,
+.cta-section p{
+    text-align:center;
+    color:#666;
+    font-size:17px;
+    line-height:1.8;
+    max-width:900px;
+    margin:15px auto;
+}
+
+/* ================= Accepted ================= */
+
+.accepted-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:20px;
+    margin-top:40px;
+}
+
+.accepted-card{
+    background:#fff;
+    padding:30px;
+    border-radius:15px;
+    text-align:center;
+    font-size:18px;
+    font-weight:600;
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+    transition:.3s;
+}
+
+.accepted-card:hover{
+    transform:translateY(-8px);
+    background:#f4b400;
+    color:#fff;
+}
+
+/* ================= Product ================= */
+
+.product-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+    gap:25px;
+    margin-top:40px;
+}
+
+.product-card{
+    background:#fff;
+    padding:35px 25px;
+    border-radius:18px;
+    text-align:center;
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+    transition:.3s;
+}
+
+.product-card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 20px 40px rgba(0,0,0,.15);
+}
+
+.product-card h3{
+    color:#f4b400;
+    margin-bottom:15px;
+    font-size:24px;
+}
+
+.product-card p{
+    color:#666;
+    line-height:1.7;
+}
+
+/* ================= Purchase Details ================= */
+
+.details-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+    margin-top:40px;
+}
+
+.detail-card{
+    background:#fff;
+    padding:35px;
+    text-align:center;
+    border-radius:18px;
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+    transition:.3s;
+}
+
+.detail-card:hover{
+    transform:translateY(-8px);
+}
+
+.detail-card h3{
+    font-size:35px;
+    color:#f4b400;
+    margin-bottom:12px;
+}
+
+.detail-card p{
+    color:#666;
+    line-height:1.7;
+}
+
+/* ================= Steps ================= */
+
+.step-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+    gap:25px;
+    margin-top:40px;
+}
+
+.step-card{
+    background:#fff;
+    padding:35px;
+    text-align:center;
+    border-radius:18px;
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+    transition:.3s;
+}
+
+.step-card:hover{
+    transform:translateY(-8px);
+}
+
+.step-card span{
+    font-size:45px;
+}
+
+.step-card h3{
+    margin:20px 0 10px;
+    color:#222;
+}
+
+.step-card p{
+    color:#666;
+    line-height:1.7;
+}
+
+/* ================= CTA ================= */
+
+.cta-section{
+    background:linear-gradient(135deg,#f4b400,#ffcf40);
+    border-radius:25px;
+    padding:70px 30px;
+    text-align:center;
+    margin-bottom:80px;
+}
+
+.cta-section h2{
+    color:#fff;
+}
+
+.cta-section p{
+    color:#fff;
+    margin-bottom:30px;
+}
+
+.cta-section .sell-now-btn{
+    background:#fff;
+    color:#f4b400;
+}
+
+.cta-section .sell-now-btn:hover{
+    background:#222;
+    color:#fff;
+}
+
+/* ================= Responsive ================= */
+
+@media(max-width:992px){
+
+.buy-hero h1{
+    font-size:38px;
+}
+
+.why-section h2,
+.accepted-section h2,
+.product-section h2,
+.purchase-section h2,
+.benefit-section h2,
+.cta-section h2{
+    font-size:30px;
+}
+
+}
+
+@media(max-width:768px){
+
+.buy-hero{
+    padding:70px 20px;
+}
+
+.buy-hero h1{
+    font-size:30px;
+}
+
+.buy-hero p{
+    font-size:16px;
+}
+
+.sell-now-btn{
+    width:100%;
+    max-width:300px;
+}
+
+.product-card,
+.detail-card,
+.step-card,
+.accepted-card{
+    padding:25px;
+}
+
+}
+
+@media(max-width:480px){
+
+.buy-hero h1{
+    font-size:26px;
+}
+
+.why-section h2,
+.accepted-section h2,
+.product-section h2,
+.purchase-section h2,
+.benefit-section h2,
+.cta-section h2{
+    font-size:24px;
+}
+
+.product-card h3{
+    font-size:20px;
+}
+
+}

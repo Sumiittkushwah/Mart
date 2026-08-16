@@ -1,0 +1,509 @@
+/* ==========================================================
+   BananaMart - Send Request Page (Part 1)
+========================================================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+
+/* =========================
+   Page Header
+========================= */
+
+.page-header{
+    margin-bottom:30px;
+}
+
+
+.page-header h1{
+
+    font-size:34px;
+    font-weight:700;
+    color:#2e7d32;
+    margin-bottom:8px;
+
+}
+
+
+.page-header p{
+
+    color:#666;
+    font-size:15px;
+
+}
+
+
+
+/* =========================
+   Request Card
+========================= */
+
+.request-card{
+
+    background:#fff;
+    width:100%;
+    padding:35px;
+    border-radius:18px;
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+    border:1px solid #eee;
+    animation:slideUp .5s ease;
+
+}
+
+
+.request-card:hover{
+
+    box-shadow:0 15px 35px rgba(0,0,0,.12);
+
+}
+
+
+
+/* =========================
+   Form Layout
+========================= */
+
+.request-card form{
+
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:25px;
+
+}
+
+
+
+/* =========================
+   Input Group
+========================= */
+
+.input-group{
+
+    display:flex;
+    flex-direction:column;
+
+}
+
+
+.input-group label{
+
+    font-size:15px;
+    font-weight:600;
+    color:#333;
+    margin-bottom:8px;
+
+}
+
+
+
+/* =========================
+   Inputs
+========================= */
+
+.input-group input,
+.input-group select,
+.input-group textarea{
+
+    width:100%;
+    padding:14px 16px;
+    border:1px solid #ddd;
+    border-radius:10px;
+    outline:none;
+    font-size:15px;
+    background:#fafafa;
+    transition:.3s;
+
+}
+
+
+
+.input-group textarea{
+
+    resize:none;
+    min-height:130px;
+
+}
+
+
+
+/* =========================
+   Focus Effect
+========================= */
+
+.input-group input:focus,
+.input-group select:focus,
+.input-group textarea:focus{
+
+    border-color:#2e7d32;
+    background:#fff;
+    box-shadow:0 0 0 4px rgba(46,125,50,.12);
+
+}
+
+
+
+/* =========================
+   Hover Effect
+========================= */
+
+.input-group input:hover,
+.input-group select:hover,
+.input-group textarea:hover{
+
+    border-color:#2e7d32;
+
+}
+
+
+
+/* =========================
+   Full Width Field
+========================= */
+
+.input-group.full-width{
+
+    grid-column:1/3;
+
+}
+
+
+
+/* =========================
+   File Upload
+========================= */
+
+.input-group input[type="file"]{
+
+    padding:12px;
+    cursor:pointer;
+    background:#fff;
+
+}
+
+
+.input-group input[type="file"]::file-selector-button{
+
+    background:#2e7d32;
+    color:white;
+    border:none;
+    padding:8px 15px;
+    border-radius:6px;
+    cursor:pointer;
+    margin-right:10px;
+
+}
+
+
+
+/* =========================
+   Animation
+========================= */
+
+@keyframes slideUp{
+
+    from{
+
+        opacity:0;
+        transform:translateY(25px);
+
+    }
+
+
+    to{
+
+        opacity:1;
+        transform:translateY(0);
+
+    }
+
+}
+/* ==========================================================
+   BananaMart - Send Request Page (Part 2)
+========================================================== */
+
+
+/* =========================
+   Submit Button
+========================= */
+
+.submit-btn{
+
+    grid-column:1/3;
+    width:220px;
+    margin:15px auto 0;
+
+    padding:14px 30px;
+
+    background:#2e7d32;
+    color:white;
+
+    border:none;
+    border-radius:12px;
+
+    font-size:16px;
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+
+
+.submit-btn:hover{
+
+    background:#1b5e20;
+
+    transform:translateY(-4px);
+
+    box-shadow:0 10px 20px rgba(46,125,50,.3);
+
+}
+
+
+
+.submit-btn:active{
+
+    transform:scale(.96);
+
+}
+
+
+
+/* =========================
+   File Name Styling
+========================= */
+
+input[type="file"]{
+
+    color:#555;
+
+}
+
+
+
+/* =========================
+   Select Dropdown
+========================= */
+
+select{
+
+    cursor:pointer;
+
+}
+
+
+
+select option{
+
+    padding:10px;
+
+}
+
+
+
+/* =========================
+   Success Animation
+========================= */
+
+.request-card{
+
+    animation:requestFade .6s ease;
+
+}
+
+
+
+@keyframes requestFade{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(30px);
+
+    }
+
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+
+
+/* =========================
+   Form Background Effect
+========================= */
+
+.request-card::before{
+
+    content:"";
+
+    position:absolute;
+
+    width:120px;
+
+    height:120px;
+
+    border-radius:50%;
+
+    background:rgba(46,125,50,.08);
+
+    top:-40px;
+
+    right:-40px;
+
+}
+
+
+
+/* =========================
+   Tablet Responsive
+========================= */
+
+@media(max-width:900px){
+
+
+    .request-card form{
+
+        grid-template-columns:1fr;
+
+    }
+
+
+    .input-group.full-width{
+
+        grid-column:auto;
+
+    }
+
+
+    .submit-btn{
+
+        grid-column:auto;
+
+        width:100%;
+
+    }
+
+}
+
+
+
+/* =========================
+   Mobile Responsive
+========================= */
+
+@media(max-width:600px){
+
+
+    .page-header h1{
+
+        font-size:28px;
+
+    }
+
+
+    .request-card{
+
+        padding:20px;
+
+        border-radius:14px;
+
+    }
+
+
+    .input-group input,
+    .input-group select,
+    .input-group textarea{
+
+        font-size:14px;
+
+        padding:12px;
+
+    }
+
+
+    .submit-btn{
+
+        font-size:15px;
+
+    }
+
+}
+
+
+
+/* =========================
+   Small Mobile
+========================= */
+
+@media(max-width:400px){
+
+
+    .page-header h1{
+
+        font-size:24px;
+
+    }
+
+
+    .request-card{
+
+        padding:15px;
+
+    }
+
+}
+
+
+
+/* =========================
+   Scrollbar
+========================= */
+
+::-webkit-scrollbar{
+
+    width:8px;
+
+}
+
+
+::-webkit-scrollbar-thumb{
+
+    background:#2e7d32;
+
+    border-radius:20px;
+
+}
+
+
+::-webkit-scrollbar-track{
+
+    background:#f1f1f1;
+
+}
+
+
+
+/* =========================
+   Selection
+========================= */
+
+::selection{
+
+    background:#2e7d32;
+
+    color:white;
+
+}
