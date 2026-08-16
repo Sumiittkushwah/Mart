@@ -1,7 +1,7 @@
 import "../css/Login.css";
 import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
-import API from "../api";
+import API from "./api";
 import { useTranslation } from "react-i18next";
 
 function Login() {

@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import API from "../api";
+import API from "./api";
 import { useNavigate } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import "../css/SendRequest.css";

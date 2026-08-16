@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import API from "../api";
+import API from "./api";
 import { useNavigate, Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import "../css/AdminLogin.css";

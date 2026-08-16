@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import API from "../api";
+import API from "./api";
 import { useTranslation } from "react-i18next";
 import "../css/ClientDashboard.css";
 
