@@ -1,6 +1,6 @@
 import "../css/Register.css";
 import { Link, useNavigate } from "react-router-dom";
-import axios from "axios";
+import API from "../api";
 import React, { useState } from "react";
 
 function Register() {
@@ -16,7 +16,7 @@ function Register() {
     e.preventDefault();
 
     try {
-      const res = await axios.post("http://localhost:5000/reg", {
+      const res = await API.post("/reg", {
         name,
         email,
         phonenumber,
@@ -49,7 +49,6 @@ function Register() {
         <p>Create your account to start selling bananas.</p>
 
         <form onSubmit={handleSubmit}>
-
           <div className="input-box">
             <label>Full Name</label>
             <input
@@ -108,14 +107,12 @@ function Register() {
           <button type="submit" className="register-btn">
             Register
           </button>
-
         </form>
 
         <div className="login-link">
           Already have an account?
           <Link to="/login"> Login</Link>
         </div>
-
       </div>
     </div>
   );
